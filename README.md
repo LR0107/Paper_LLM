@@ -1,1 +1,1 @@
-# Paper_LLM
+# As large language models become widely used, their inference performance is closely tied to hardware configurations. To improve deployment efficiency, this project conducts performance testing and predictive modeling of model inference across different hardware environments, explores how hardware parameters affect model performance, and provides a basis for model optimization and resource allocation.
