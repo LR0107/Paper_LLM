@@ -1,0 +1,19 @@
+Background
+LLMs are too large to run on a single phone, and cloud inference raises privacy, bandwidth, and latency issues. Existing mobile optimizations remain insufficient for full models. LinguaLinked enables multiple trusted phones to cooperatively run different model segments.
+
+Methods
+Model partitioning: Split the LLM into subgraphs and assign them based on each device’s compute, memory, and bandwidth.
+Efficient communication: Devices pass activations in a ring; direct device-to-device transfer is allowed when needed to avoid unnecessary hops.
+Load balancing: The system monitors device speed and bandwidth; if a device slows down, subgraph assignment adapts to remove bottlenecks.
+
+Experiments
+Devices: 3× Pixel 7 Pro + 1 low-end phone.
+Models: BLOOM 1.1B / 1.7B / 3B (full precision and int8).
+Task: Wikitext-2 text generation, measuring per-token latency.
+Comparison: naive equal partitioning vs LinguaLinked optimized scheduling.
+
+Results
+1.Optimized partitioning: 1.1×–1.6× faster.
+2.Multithreading: up to 2.6× speedup.
+3.Load balancing: ~30% improvement.
+4.Residual communication: 4–5% lower communication delay.
