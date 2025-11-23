@@ -53,4 +53,10 @@ Generate architecture → predict accuracy/latency → update policy → iterate
 1. **Inference speedup:** up to 73.4× on Jetson Nano (vs EGNAS)  
 2. **Higher accuracy:** +8–11% over manually designed GNNs  
 3. **Smaller models:** up to 99.5% reduction in size  
-4. **Faster search:** 16.5%–75% reduction in search time  
+4. **Faster search:** 16.5%–75% reduction in search time
+
+## Version 2.0
+**Motivation:** HWGNAS addresses the gap in existing GNN architecture search methods by considering hardware performance, especially on edge devices.
+
+**Main Design:** HWGNAS uses reinforcement learning to optimize GNN architectures for both accuracy and latency, improving search efficiency with prediction models.
+
