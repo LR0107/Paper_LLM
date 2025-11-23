@@ -45,3 +45,9 @@ This work compares cloud GPUs and Jetson edge devices running MTCNN + FaceNet.
 2. **Edge deployment** best for low latency and privacy  
 3. **Cloud** best when compute needs are high and network is strong  
 4. **Hybrid** is the most balanced under low bandwidth or weak edge devices
+
+## Version 2.0
+**Motivation:** Face recognition applications face a choice between cloud and edge deployment, with cloud having high latency and edge computing having limited processing power.
+
+**Main Design:** Three deployment architectures—cloud, edge, and hybrid—are proposed, focusing on real-time performance, energy efficiency, and scalability to help select the optimal deployment strategy.
+
