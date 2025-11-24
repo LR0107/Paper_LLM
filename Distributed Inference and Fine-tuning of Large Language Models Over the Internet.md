@@ -45,4 +45,12 @@ A decentralized, fault-tolerant system for distributed LLM inference and fine-tu
 3. Outperforms offloading in real intercontinental settings  
 4. Load balancing achieves 90–100% of optimal throughput
 
+## Version 2.0
+**Motivation:**
+This paper proposes a distributed method to run large language models efficiently using multiple internet-connected devices, reducing hardware needs.
+
+**Main Design:**
+The system utilizes a distributed architecture and fault-tolerant algorithms to optimize inference, ensuring high performance even with unstable devices and networks.
+
+
 
