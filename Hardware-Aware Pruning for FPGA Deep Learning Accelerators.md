@@ -42,4 +42,12 @@ compute importance → initial pruning → hardware alignment (HAP) → finetuni
 2. 5× compression with minimal accuracy loss  
 3. Residual pruning and HAP each add 10–16% additional speedup
 
+## Version 2.0
+**Motivation:**
+Accelerate deep neural network inference on FPGA by using a hardware-aware pruning method to reduce inference time.
+
+**Main Design:**
+Evaluate filter importance using normalized L2-norm and prune iteratively; combine residual connection pruning and hardware-aware pruning to optimize inference speed and accuracy
+
+
 
