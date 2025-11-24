@@ -38,3 +38,10 @@ Prefill chunking → iterative processing → token-by-token decode → stall-fr
    Lower P99 TBT via stall-free batching; reduced high-latency outliers.  
 3. **Pipeline Efficiency:**  
    Fewer pipeline bubbles, improving throughput on large-model deployments.
+
+## Version 2.0
+**Motivation:**
+Optimize the throughput-latency balance in large language model (LLM) inference.
+**Main Design:**
+Sarathi-Serve introduces chunked-prefills to split prefill tasks into smaller chunks, and stall-free scheduling to allow new requests to join ongoing batches without interrupting decodes.
+
