@@ -33,3 +33,10 @@ LLM inference and fine-tuning are memory and compute intensive.
 1. **Inference Speedup:** PEQA (4-bit) is 1.5–2.8× faster than LoRA with 3× less memory usage.  
 2. **Accuracy:** PEQA with 3-bit quantization retains accuracy close to full precision.  
 3. **Task Adaptation:** PEQA achieves task adaptation similar to LoRA on Alpaca.
+
+## Version 2.0
+**Motivation:**
+Address the high memory and computational costs in LLM fine-tuning and deployment by combining PEFT and quantization to reduce memory usage and accelerate inference.
+
+**Main Design:**
+PEQA updates only the quantization scale, freezing the integer matrix, combining the advantages of PEFT and quantization to reduce memory consumption and speed up inference.
