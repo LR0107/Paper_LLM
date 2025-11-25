@@ -37,3 +37,11 @@ LLMs are too large to run on a single phone, and cloud inference raises privacy,
 2. Multithreading: up to 2.6× speedup 
 3. Load balancing: ~30% improvement
 4. Residual communication: 4–5% lower communication delay
+
+## Version 2.0
+**Motivation:**
+LinguaLinked enables efficient LLM inference on mobile devices, addressing memory and processing limitations while ensuring data privacy.
+
+**Main Design:**
+It uses decentralized task distribution, optimized model assignment, and load balancing to enhance efficiency and minimize latency across mobile devices.
+
