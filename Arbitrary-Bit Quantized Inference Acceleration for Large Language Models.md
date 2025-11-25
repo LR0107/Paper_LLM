@@ -37,8 +37,10 @@ Low-bit quantization reduces memory and compute cost but often harms accuracy an
 ## Version 2.0
 **Motivation:**
 Address the high computational and storage demands of large language models, enhancing the efficiency of low-bit quantized inference.
+
 **Main design:**
 Introduce ABQ-LLM, using distribution correction and bit balance strategies to enhance performance, and a quantization framework for efficient inference.
+
 
 
 
