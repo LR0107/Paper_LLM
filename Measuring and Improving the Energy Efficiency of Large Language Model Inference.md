@@ -34,3 +34,11 @@ This work analyzes LLM inference energy use and proposes optimization strategies
 - Choose models that balance accuracy and energy use.  
 - Prefer quantized versions.  
 - Increase batch size until GPU is fully utilized.
+
+## Version 2.0
+**Motivation:**
+Optimize energy consumption during LLM inference to improve efficiency.
+
+**Main Design:**
+Introduced EnergyMeter, a tool to measure energy usage across CPU, GPU, memory, and storage, focusing on factors like model architecture, batch size, and quantization.
+
