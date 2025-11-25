@@ -32,3 +32,11 @@ tType → slice tiles → align & transform → hardware-aware scheduling → ef
 2. **Memory Savings**: LLaMA-2 INT1/INT2 reduces GPU memory usage by 70–85%.  
 3. **Cross-Platform**: Achieves near-cuBLAS/CUTLASS bandwidth utilization on A100/V100/A6000, MI250.  
 4. **Fast Compilation**: **100×** faster than AMOS, 10× faster than TensorIR.
+
+## Version 2.0
+**Motivation:**
+LADDER optimizes deep learning with low-precision data types, improving efficiency and memory use.
+
+**Main Design:**
+It uses a flexible tensor type system (tType) and fine-grained transformations (tTile) to optimize data handling and computation, with hardware-aware scheduling for efficient execution.
+
