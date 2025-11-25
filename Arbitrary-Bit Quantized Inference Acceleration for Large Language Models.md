@@ -34,4 +34,11 @@ Low-bit quantization reduces memory and compute cost but often harms accuracy an
 2. +7.5% INT2 accuracy improvement, leading zero-shot results  
 3. W2A8 on LLaMA-7B achieves 1.6× speedup and 2.7× memory savings
 
+## Version 2.0
+**Motivation:**
+Address the high computational and storage demands of large language models, enhancing the efficiency of low-bit quantized inference.
+**Main design:**
+Introduce ABQ-LLM, using distribution correction and bit balance strategies to enhance performance, and a quantization framework for efficient inference.
+
+
 
