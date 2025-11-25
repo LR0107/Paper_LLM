@@ -31,3 +31,11 @@ This work systematically compares the two across models, tasks, and compression 
 2. Pruning only wins at extreme compression, but performance becomes unusably low.  
 3. Best results from quantization + light pruning.  
 4. Quantization is more hardware-friendly due to efficient low-bit integer operations.
+
+##Veision 2.0
+**Motivation:**
+Determine whether pruning or quantization is better for neural network compression to guide future hardware design.
+
+**Main Design:**
+The study compares pruning and quantization through theoretical analysis and experiments, showing that quantization generally outperforms pruning, especially at moderate compression ratios. Pruning is only better in rare cases with very high compression.
+
