@@ -31,8 +31,16 @@ OWQ improves low-bit stability and supports efficient fine-tuning.
 
 ## Results
 
-1. **3.01-bit OWQ** approaches 4-bit OPTQ accuracy  
+1. 3.01-bit OWQ approaches 4-bit OPTQ accuracy  
 2. 3-bit OWQ outperforms OPTQ 3-bit by 2–4%  
 3. WCT fine-tuning beats QLoRA with lower memory usage
+
+## Version 2.0
+**Motivation:**
+Reduce the storage and computation costs of LLMs with minimal quantization errors.
+
+**Main Design:**
+OWQ identifies sensitive weight columns and keeps them in high precision, while the rest of the model is quantized with optimized low-precision, improving performance and minimizing memory overhead.
+
 
 
