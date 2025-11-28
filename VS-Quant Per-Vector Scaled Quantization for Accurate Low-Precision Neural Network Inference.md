@@ -36,3 +36,11 @@ Coarse-grained quantization (per-layer/per-channel) causes large quantization er
 1. Near–full precision accuracy with 4-bit weights + 8-bit activations 
 2. 69% energy reduction, 36% area savings, faster inference  
 3. Significant memory compression and improved hardware efficiency
+
+## Version 2.0
+**Motivation:**
+Reduce quantization error more effectively than per-channel methods.
+
+**Main Design:**
+Use per-vector scaling with a lightweight two-level scale to achieve low-bit quantization with higher accuracy and small hardware cost.
+
