@@ -32,3 +32,12 @@ This paper introduces **Intelligence Per Watt (IPW)** as a new metric for measur
 - Local models answered 88.7% of queries, with strong performance in creative tasks.
 - Local inference IPW improved 5.3x from 2023 to 2025, with query coverage rising from 23.2% to 71.3%.
 - The smart routing system reduced energy consumption, computing power, and costs in hybrid local-cloud systems, saving up to 60-80% of resources.
+
+
+## Version 2.0
+**Motivation :**
+Evaluate whether local small LMs can deliver useful intelligence under strict power limits, reducing reliance on cloud inference.
+
+**Main Design :**
+Introduce Intelligence per Watt (IPW) and build a large-scale benchmark measuring accuracy and power across models and hardware, showing how local models improve efficiency and how hybrid local–cloud routing cuts energy and cost.
+
