@@ -52,3 +52,11 @@ Model registration → Variant generation → Offline profiling → Online selec
 - Profiling only measures latency, loading time, and memory—no training or large datasets required.  
 - Only one machine per hardware type is needed for profiling (cloud-based).  
 - Cost-efficiency = minimal completion time (loading + inference) + lowest hardware cost.
+
+## Version 2.0
+**Motivation:**
+Eliminate manual model-variant and hardware selection for each inference query.
+
+**Main Design:**
+Provide a model-less API and automatically pick and scale the best model-variant and hardware per query using profiling and joint vertical/horizontal autoscaling.
+
