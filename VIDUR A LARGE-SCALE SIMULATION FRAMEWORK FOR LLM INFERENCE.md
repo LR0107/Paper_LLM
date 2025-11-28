@@ -47,3 +47,11 @@ Deploying LLM inference requires tuning multiple configurations (e.g., parallel 
 - Vidur's configurations significantly improve QPS/$ and throughput.
 
 **Note:** Primarily focused on GPU.
+
+## Version 2.0
+**Motivation:**
+Simulate large-scale LLM inference without costly GPU deployments.
+
+**Main Design:**
+Replay real workloads with a detailed simulator modeling batching, KV-cache, and GPU behavior to estimate throughput and latency.
+
