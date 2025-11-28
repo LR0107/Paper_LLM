@@ -38,3 +38,10 @@ ZeroQuant provides efficient INT8 and INT4/INT8 PTQ for large models.
 1. 5.19× inference speedup, 3× memory reduction  
 2. Accuracy close to FP16  
 3. On GPT-NeoX-20B: **5.2×** speedup and lower GPU requirements
+
+## Version 2.0
+**Motivation:**
+Compress large Transformers efficiently without retraining or access to training data.
+
+**Main Design:**
+Use fine-grained INT8/INT4 quantization plus lightweight layer-by-layer distillation and fused kernels to cut memory and latency with minimal accuracy loss.
